@@ -1,0 +1,37 @@
+.recipe-container {
+    background: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 1000px;
+    padding: 45px;
+    margin: 2% 0;
+}
+
+.recipe-container .recipe__image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .recipe-container {
+        width: 70%;
+        min-width: 400px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .recipe-container {
+        border-radius: 0;
+        width: 100%;
+        min-width: 375px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .recipe-container .recipe__image img {
+        border-radius: 0;
+    }
+}

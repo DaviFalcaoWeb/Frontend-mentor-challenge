@@ -1,0 +1,39 @@
+.recipe__instructions {
+    border-bottom: 1px solid var(--stone);
+    padding-bottom: 30px;
+}
+
+.recipe__instructions h2 {
+    font-family: var(--secondary-font);
+    color: var(--brown);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.recipe__intructions-steps li {
+    color: var(--light-gray);
+    margin: 20px 0 0 20px;
+    padding-left: 10px;
+}
+
+.recipe__instructions li::marker {
+    color: var(--brown);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .recipe__instructions h2 {
+        font-size: 1.7rem;
+    }
+
+    .recipe__intructions-steps li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .recipe__instructions {
+        padding: 3% 8%;
+    }
+}

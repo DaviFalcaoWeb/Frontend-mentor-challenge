@@ -1,0 +1,38 @@
+@import url("main.css");
+@import url("description.css");
+@import url("instructions.css");
+@import url("nutrition.css");
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #f3e6d8;
+    --primary-color: #002F52;
+    --secondary-color: #302d2c;
+    --light-gray: #5f574e;
+    --stone: #e4ded8;
+    --rose: #7b284f;
+    --light-rose: #fff5fa;
+    --brown: #854632;
+    --primary-font: "Outfit", serif;
+    --secondary-font: "Young Serif", serif;
+}
+
+body {
+    background-color: var(--background);
+    font-family: var(--primary-font);
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 400px) {
+    body {
+        display: block;
+        justify-content: initial;
+    }
+}
